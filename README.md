@@ -4,14 +4,19 @@ This project relies primarily on the design process activities by combining some
 
 ## description of the project
 The missile contains a burner, a proximity trigger, a warhead, two sets of wings, yaw (i.e., left, right), pitch (i.e., up, down), a launch sensor, and an infra-red camera.
+
 • An algorithm is available that transfers the infra-red image of the camera to the yaw and pitch angles of the target.
+
 • Half a second after the missile is launched, the burner is activated, from then on, the burner remains active until
 the missile explodes or an error is detected.
+
 • The system uses its wings to aim the missile at the target. Each set of wings has five modes: Centered, Small
 deviation (one to each of the two directions), and Strong deviation to each direction.
+
 • The missile is armed 3 seconds after it is launched. The burner malfunction, or the camera losing the target, causes
 the arming to be canceled and the burner to stop.
-• If the missile is armed and the proximity detected is activated, the warhead explodes
+
+• If the missile is armed and the proximity detected is activated, the warhead explodes.
 
 
 ## Requirements modeling
